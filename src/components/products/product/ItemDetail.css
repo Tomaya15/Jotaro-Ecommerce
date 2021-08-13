@@ -1,0 +1,43 @@
+.detain-item-container {
+  width: 80%;
+  max-width: 950px;
+  margin: auto;
+  display: grid;
+  gap: 20px 50px;
+  background: #f0f0f0;
+  padding: 40px;
+  grid-template-columns: 1.5fr 2fr;
+}
+
+.detain-item-container img {
+  display: block;
+  height: 100%;
+  grid-row: 1 / 6;
+  grid-column: 1 / 2;
+  display: cover;
+}
+
+h1 {
+    font-size: 50px !important;
+}
+
+h2 {
+    color: #ded714;
+    font-size: 35px !important;
+    font-weight: 900;
+}
+
+.detain-item-container .container {
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+}
+
+
+.detain-item-container .container .item-contador-container {
+    padding: 0;
+}
+
+.detain-item-container .container  div:nth-child(2) {
+   justify-content: unset !important;
+}

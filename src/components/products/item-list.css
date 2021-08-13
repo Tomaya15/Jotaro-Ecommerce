@@ -1,0 +1,16 @@
+.item-list-container{
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr;
+   grid-gap: 30px;
+   max-width: 1000px;
+   margin: 0 auto;
+   grid-template-rows: auto; 
+}
+img {
+   height: 100%;
+   object-fit: cover;
+   border: 2px solid red;
+   width: auto;
+ }
+ 
+ 
