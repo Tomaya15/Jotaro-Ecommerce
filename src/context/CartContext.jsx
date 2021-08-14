@@ -5,7 +5,7 @@ export const CartContext = createContext({});
 export const useCartContext = () => useContext(CartContext);
 
 export const CartProvider = ({children}) => {
-   const [cart, setCart] = useState([]);
+   const [cart, setCart] = useState([]); 
    const clearCart = () => setCart([]);
    const isInCart = (id) => cart.some(item => item.id === id);
    const [providerLoading, setProviderLoading] = useState(false);
@@ -23,7 +23,7 @@ export const CartProvider = ({children}) => {
       }else{
          setCart(prev => [ ...prev, { ...item, quantity}]);
       }
-      
+      window.alert(`Has añadido ${quantity} al carrito  !`);
    };
 
    const realStock = product => {

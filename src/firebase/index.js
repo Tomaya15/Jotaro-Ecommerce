@@ -10,9 +10,10 @@ var firebaseConfig = {
    appId: "1:427278220796:web:719095e25c697b2ad54679"
  };
 
-const app = !firebase.apps.length ? firebase.initializeApp(firebaseConfig) : firebase.app();;
+export const app = !firebase.apps.length ? firebase.initializeApp(firebaseConfig) : firebase.app();;
 
-export const itemsCollection = firebase.firestore(app).collection("products")
+export const ordersCollection = firebase.firestore(app).collection("orders");
+export const itemsCollection = firebase.firestore(app).collection("products");
 
 
 /* const fb = firebase.initializeApp(firebaseConfig);

@@ -1,0 +1,45 @@
+.checkout{
+    display: flex;
+    justify-content: center;
+}
+
+label{
+    margin: 20px;
+    margin-bottom: 10px;
+}
+input{
+    width: 400px;
+    height: 30px;
+    border-radius: 8px;
+    border: none;
+    box-shadow: 1px 1px 0.8px #0c1d2e;
+    margin-top: 30px;
+    margin-bottom: 14px;
+}
+
+.title-form{
+    margin-bottom: 20px;
+    margin-right: 30px;
+}
+
+.button-form{
+    height: 46px;
+    margin-top: 14px;
+    background-color: rgb(218, 255, 6);
+    border-radius: 8px;
+    border: 1px solid rgb(8, 68, 6);
+    box-shadow: 1px 2px 3px #252525aa;
+    font-size: 15px;
+}
+
+.form-container{
+    display: flex;
+    flex-direction: column;
+}
+
+.error-form{
+    font-size: 12px;
+    color: rgb(122, 12, 22);
+
+    margin-bottom: 10px;
+}

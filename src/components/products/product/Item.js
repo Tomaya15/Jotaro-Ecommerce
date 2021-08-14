@@ -15,7 +15,7 @@ const Item = ({item}) => {
    const onAdd = qty => addToCart(item, qty);
   
    return (
-      <Card style={{width:300, height: 600, margin: 0, padding: 0}} key={item.id}>
+      <Card style={{width:300, margin: 10, padding: 0}} key={item.id}>
          <Image style={{ height: 300 }}src={item.pictureUrl}/>
       <Card.Content>
          <Link to= {`/item/${item.id}`}>

@@ -2,6 +2,7 @@ import React from "react";
 import { Redirect } from "react-router-dom";
 import { useCartContext } from "../../context/CartContext";
 import "./Cart.css";
+import { Link } from "react-router-dom";
 
 const Cart = () => {
   const { cart, clearCart, removeItem } = useCartContext();
@@ -24,6 +25,7 @@ const Cart = () => {
           .toFixed(2)}
       </h2>
       <button onClick={clearCart}>VACIAR CARRITO</button>
+      <Link to="/checkout"><button>PEDIR ORDEN</button></Link>
     </div>
   );
 };
